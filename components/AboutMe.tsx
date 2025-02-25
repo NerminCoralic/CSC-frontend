@@ -60,7 +60,7 @@ export default function App() {
                 <h2 className="text-3xl font-bold text-[#2F3830] flex items-center gap-2">
                   Ko Je Naš Poglavica?
                   <Image
-                    src={"/tent.svg"}
+                    src={"/camp.svg"}
                     alt="Ko je poglavica?"
                     width={32}
                     height={32}
