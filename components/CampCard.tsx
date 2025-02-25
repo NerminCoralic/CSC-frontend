@@ -9,7 +9,7 @@ const CampCard = ({ blog }: any) => {
 
   const imageurl =
     `https://scintillating-adaptation-production.up.railway.app` +
-    blog.Image.url;
+    blog.Image.formats.thumbnail.url;
 
   return (
     <div
