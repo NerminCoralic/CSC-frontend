@@ -9,15 +9,20 @@ const CampCard = ({ blog }: any) => {
 
   const imageurl =
     `https://scintillating-adaptation-production.up.railway.app` +
-    blog.Image.formats.thumbnail.url;
+    blog.Image.url;
 
   return (
     <div
-      className={`h-full min-w-[90%] sm:min-w-[1100px] bg-cover bg-no-repeat rounded-lg lg:rounded-[50px] xl:rounded-5xl`}
-      style={{
-        backgroundImage: `url(${imageurl})`,
-      }}
+      className={`h-full min-w-[90%] relative sm:min-w-[1100px] bg-cover bg-no-repeat rounded-lg lg:rounded-[50px] xl:rounded-5xl`}
     >
+      <Image
+        src={imageurl}
+        alt="blog"
+        layout="fill"
+        objectFit="cover"
+        className="absolute inset-0 rounded-3xl"
+        priority
+      />
       <div className="flex relative h-full flex-col items-start w-full justify-between p-6 lg:px-20 lg:py-10">
         <div className="flex items-center justify-center gap-4">
           <div className="rounded-full bg-[#30AF5B] p-4">
@@ -27,9 +32,7 @@ const CampCard = ({ blog }: any) => {
             <h4 className="text-[18px] font-[700] text-white">
               Children&apos;s Summer Camp
             </h4>
-            <p className="text-[14px] font-[400] text-white">
-              {blog.Date} {/* Pristup podacima sa attributes */}
-            </p>
+            <p className="text-[14px] font-[400] text-white">{blog.Date}</p>
           </div>
           <div className="absolute bottom-0 left-0 w-full">
             <div className="bg-[#292C27] bg-opacity-95 rounded-b-lg lg:rounded-b-[40px] h-[240px] lg:h-[250px] px-6 py-2 sm:px-20 sm:py-4 text-white flex flex-col">
