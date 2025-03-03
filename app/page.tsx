@@ -6,6 +6,7 @@ import TourApplication from "@/components/TourApplication";
 import Gallery from "@/components/Gallery";
 import Accordion from "@/components/Accordion";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const fetchBlogs = async () => {
   const options = {
@@ -86,6 +87,7 @@ const Home = async () => {
       <Gallery gallery={gallery} />
       <Accordion qas={qas?.data || []} />
       <Analytics />
+      <SpeedInsights />
     </>
   );
 };
