@@ -42,7 +42,7 @@ export async function POST(req: NextRequest) {
 
     // Send email using Resend
     await resend.emails.send({
-      from: "onboarding@resend.dev",
+      from: "noreply@cscvk.com",
       to: `nermin.coralic.ets@gmail.com`,
       subject: "Nova Prijava za Ljetni Kamp",
       text: `Nova prijava:\n\n
