@@ -3,8 +3,8 @@ import Image from "next/image";
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const CampCard = ({ blog }: any) => {
   const truncatedDescription =
-    blog.Description[0].children[0].text.length > 1200
-      ? blog.Description[0].children[0].text.substring(0, 1200) + "..."
+    blog.Description[0].children[0].text.length > 100000
+      ? blog.Description[0].children[0].text.substring(0, 100000) + "..."
       : blog.Description[0].children[0].text;
 
   const imageurl =
