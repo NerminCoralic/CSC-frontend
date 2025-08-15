@@ -55,7 +55,7 @@ const Hero = () => {
           <Link href="/prijava">
             <Button
               type="button"
-              title="Prijavite se"
+              title="Prijavi turu!"
               variant="btn_green"
               full
             />

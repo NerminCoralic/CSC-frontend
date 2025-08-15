@@ -20,7 +20,7 @@ const TourApplication = () => {
           <Link href="/prijava">
             <Button
               type="button"
-              title="Učlani Dijete"
+              title="Prijavi turu!"
               icon="/user.svg"
               variant="btn_green"
             />
